@@ -20,7 +20,7 @@ class Vocab:
         text = text.lower()
         # Remove prepositions and unions since they boost
         # text probability
-        text = ' '.join([token for token in text.split() if len(token) >= 2])
+        # text = ' '.join([token for token in text.split() if len(token) >= 2])
         return text
 
     def probability(self, word: str):
